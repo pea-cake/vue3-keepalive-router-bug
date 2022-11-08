@@ -1,12 +1,11 @@
 <script setup>
 import { ref, onActivated } from 'vue';
-import Common from './Common.vue'
 onActivated(() => {
-  console.log('child1');
+  console.log('com3child1 active');
+  alert('com3child1 active')
 });
 </script>
 <template>
-	<p>child1</p>
+	<p>com3child1</p>
 	<input type="text" name="" id="">
-	<Common />
 </template>
